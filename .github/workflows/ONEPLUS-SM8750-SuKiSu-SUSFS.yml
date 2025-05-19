@@ -52,10 +52,10 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-      CCACHE_COMPILERCHECK: "%compiler% -dumpmachine; %compiler% -dumpversion"
-      CCACHE_NOHASHDIR: "true"
-      CCACHE_HARDLINK: "true"
+#    env:
+#      CCACHE_COMPILERCHECK: "%compiler% -dumpmachine; %compiler% -dumpversion"
+ #      CCACHE_NOHASHDIR: "true"
+#       CCACHE_HARDLINK: "true"
     steps:
       - name: Maximize build space
         uses: easimon/maximize-build-space@master
